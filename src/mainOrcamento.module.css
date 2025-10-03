@@ -1,0 +1,161 @@
+.container {
+    width: 100%;
+}
+.content {
+    width: 1260px;
+    margin: auto;
+    & h3 {
+        color: #254D9C;
+        font-weight: 700;
+        font-size: x-large;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    & .phones {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        margin-top: 3rem;
+        flex-direction: column;
+        align-items: center;
+        & .itens {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem; 
+            align-items: center;
+        }
+        & p {
+            font-weight: 200;
+            color: #C4C4C4;
+        }
+        & span {
+            color: #707071;
+            font-size: 14px;
+        }
+        & .item {
+            display: flex;
+            align-items: center;
+            font-weight: 200;
+            gap: 8px;
+            & .icon {
+                width: 30px;
+            }
+        }
+    }
+    
+}
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    & h4 {
+        font-weight: 200;
+        font-size: small;
+    }
+    & .form {
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        margin: auto;
+        gap: 9px;
+        margin-top: 2rem;
+        & input {
+            padding: 14px;
+            border-radius: 2rem;
+            border: 1px solid #C4C4C4;
+            width: 600px;
+            margin: auto;
+            color: #C4C4C4;
+            outline: none;
+        } 
+        & .textarea {
+            padding: 14px;
+            border-radius: 2rem;
+            border: 1px solid #C4C4C4;
+            width: 600px;
+            margin: auto;
+            color: #C4C4C4;
+            outline: none;
+            resize: none;
+        }
+        input::placeholder {
+            color: #C4C4C4;       /* Cor do placeholder */
+            opacity: 1;        /* Mantém a cor forte (alguns navegadores aplicam transparência) */
+        }
+        textarea::placeholder {
+            color: #C4C4C4;       /* Cor do placeholder */
+            opacity: 1;        /* Mantém a cor forte (alguns navegadores aplicam transparência) */
+        }
+    }
+    & button {
+        background-color: #083D8B ;
+        padding: 1rem;
+        color: #FFF;
+        width: 150px;
+        border-radius: 4rem;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 15px;
+        font-weight: 600;
+        border: 0;
+    }
+}
+
+
+
+.line {
+    border: none; /* Remove default border */
+    height: 1px; /* Set desired thickness */
+    background-color: #C4C4C4; /* Set desired color */
+    width: 600px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        width: 100%;
+    }
+    .content {
+        
+        width: auto;
+        & .phones {
+            flex-direction: column;
+            align-items: start;
+            padding: 0 10px;
+            margin-top: 25px;
+            
+            & .itens {
+                flex-direction: column;
+                text-align: left;
+                gap: 1rem;
+                align-items: start;
+            }
+        }
+        & h3 {
+            text-align: left;
+            padding: 0 10px;
+        }
+        hr, p {
+            display: none;
+        }
+    }
+
+    .containerForm {
+        width: 100%;
+        padding: 0 2rem;
+        margin-top: 5rem;
+        & .form {
+            width: 100%;
+        }
+        & input, .textarea {
+            width: 100% !important;
+        }
+    }
+}

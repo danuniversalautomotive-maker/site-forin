@@ -1,0 +1,44 @@
+.banner {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    text-align: center;
+    & p {
+        font-weight: 200;
+        padding: 0 17rem;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    & h3 {
+        color: #254D9C;
+        font-weight: 700;
+        font-size: x-large;
+    }
+    .containerImages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        & img {
+            width: 350px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .container {
+        & p {
+            padding: 0;
+        }
+    }
+    .containerImages {
+        overflow: auto;
+        justify-content: start !important;
+    }
+}

@@ -1,0 +1,13 @@
+.container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.logo {
+    width: 130px;
+}
+
+@media (max-width: 600px){
+    
+}
