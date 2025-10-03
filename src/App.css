@@ -1,9 +1,8 @@
-::root {
-  @font-face {
-    font-family: montserrat;
-    src: url('/montserrat.ttf');
-  }
+@font-face {
+  font-family: montserrat;
+  src: url('/montserrat.ttf');
 }
+
 
 * {
   margin: 0;
